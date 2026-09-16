@@ -1,0 +1,123 @@
+/* 1. Selector Universal - Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Selector Elemen - Style dasar */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+p {
+  color: #666;
+}
+
+/* 3. Selector ID - Header unik */
+#header-halaman {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#header-halaman h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#header-halaman p {
+  color: #e0e0e0;
+}
+
+/* 4. Selector Class - Container produk */
+.container-produk {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 5. Selector Class - Kartu produk */
+.kartu-produk {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 6. Selector Descendant - Elemen dalam kartu */
+.kartu-produk .nama-produk {
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.kartu-produk .harga {
+  color: #e74c3c;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.kartu-produk .deskripsi {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.kartu-produk .tombol-beli {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.kartu-produk .tombol-beli:hover {
+  background-color: #219a52;
+}
+
+/* 7. Selector Class Gabungan - Produk unggulan */
+.produk-unggulan {
+  border: 2px solid #f39c12;
+  position: relative;
+}
+
+.badge-unggulan {
+  background-color: #f39c12;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* 8. Selector ID - Footer unik */
+#footer-halaman {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#footer-halaman p {
+  color: #bdc3c7;
+}

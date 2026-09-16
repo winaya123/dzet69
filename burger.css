@@ -1,0 +1,33 @@
+.banner-solid {
+  background-color: #ff6b6b;  /* Merah cerah */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.judul-promo {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.deskripsi-promo {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tombol-pesan {
+  background-color: white;
+  color: #ff6b6b;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tombol-pesan:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,35 @@
+.banner-overlay {
+  background-image: url('mie.jpg');
+  background-size: cover;
+  background-position: center;
+  /* Overlay dengan RGBA */
+  background-color: rgba(0, 0, 0, 0.5);  /* Hitam transparan 50% */
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.judul-promo {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.deskripsi-promo {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.tombol-pesan {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}

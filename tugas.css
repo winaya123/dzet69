@@ -1,0 +1,32 @@
+/*soal satu selector*/ 
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/*soal 2*/
+.tombol {
+
+}
+
+
+/*soal 3*/
+#header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/*soal 4*/
+.nav .a {
+    color: white;
+
+}
+
+
+/*soal 5*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

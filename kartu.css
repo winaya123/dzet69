@@ -1,0 +1,78 @@
+/* Reset dengan border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+/* Kartu profil */
+.kartu-profil {
+  background: white;
+  width: 300px;
+  margin: 0 auto;  /* Tengah */
+  padding: 30px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Foto */
+.foto {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #3498db;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Nama */
+.nama {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+/* Kelas */
+.kelas {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+/* Deskripsi */
+.deskripsi {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Tombol */
+.tombol {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tombol:hover {
+  background-color: #2980b9;
+}

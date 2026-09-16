@@ -1,0 +1,41 @@
+.banner-gambar {
+  background-image: url('fizza.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.konten-banner {
+  background-color: rgba(0, 0, 0, 0.6);  /* Overlay gelap */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.judul-promo {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.deskripsi-promo {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tombol-pesan {
+  background-color: #f39c12;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
