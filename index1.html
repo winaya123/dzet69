@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Selector CSS</title>
+
+    <style>
+        /* Selector tag */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* Selector class */
+        .kartu {
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #999;
+        }
+
+        /* Selector id */
+        #judul {
+            color: #2563eb;
+        }
+
+        /* Selector tag */
+        p {
+            color: #555;
+        }
+
+        /* Selector class dengan pseudo-class */
+        .tombol:hover {
+            background-color: #1d4ed8;
+        }
+
+        .tombol {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kartu">
+        <h1 id="judul">Halo, Dunia!</h1>
+        <p>Ini adalah contoh tampilan sederhana menggunakan selector CSS.</p>
+        <button class="tombol">Klik Saya</button>
+    </div>
+
+</body>
+</html>

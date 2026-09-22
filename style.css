@@ -1,123 +1,288 @@
-/* 1. Selector Universal - Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Selector universal */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-/* 2. Selector Elemen - Style dasar */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  line-height: 1.6;
-}
+        /* Selector tag */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #1f2937;
+        }
 
-h1 {
-  color: #2c3e50;
-}
+        /* Selector class */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background-color: #1e3a8a;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 24px;
+        font-weight: bold;
+        }
 
-p {
-  color: #666;
-}
+        .logo img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+        }
 
-/* 3. Selector ID - Header unik */
-#header-halaman {
-  background-color: #3498db;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-#header-halaman h1 {
-  color: white;
-  margin-bottom: 10px;
-}
+        /* Selector child */
+        .menu > li {
+            display: inline-block;
+            list-style: none;
+            margin-left: 25px;
+        }
 
-#header-halaman p {
-  color: #e0e0e0;
-}
+        /* Selector descendant */
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-/* 4. Selector Class - Container produk */
-.container-produk {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+        /* Pseudo-class */
+        .menu a:hover,
+        .menu a.active {
+            color: #facc15;
+        }
 
-/* 5. Selector Class - Kartu produk */
-.kartu-produk {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+        /* Selector ID */
+        #Beranda {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 80px 8%;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+        }
 
-/* 6. Selector Descendant - Elemen dalam kartu */
-.kartu-produk .nama-produk {
-  color: #2c3e50;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
+        .hero-text {
+            max-width: 550px;
+        }
 
-.kartu-produk .harga {
-  color: #e74c3c;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+        .hero-text h1 {
+            font-size: 45px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
 
-.kartu-produk .deskripsi {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
 
-.kartu-produk .tombol-beli {
-  background-color: #27ae60;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
+        /* Selector atribut */
+        a[href="#kontak"] {
+            background-color: #f59e0b;
+            padding: 12px 20px;
+            border-radius: 8px;
+        }
 
-.kartu-produk .tombol-beli:hover {
-  background-color: #219a52;
-}
+        a[href="#kontak"]:hover {
+            background-color: #d97706;
+            color: white;
+        }
 
-/* 7. Selector Class Gabungan - Produk unggulan */
-.produk-unggulan {
-  border: 2px solid #f39c12;
-  position: relative;
-}
+        .hero-image {
+            font-size: 140px;
+        }
 
-.badge-unggulan {
-  background-color: #f39c12;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  display: inline-block;
-  margin-bottom: 10px;
-}
+        section {
+            padding: 70px 8%;
+        }
 
-/* 8. Selector ID - Footer unik */
-#footer-halaman {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
+        .section-title {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 35px;
+            font-size: 32px;
+        }
 
-#footer-halaman p {
-  color: #bdc3c7;
-}
+        /* Pseudo-element */
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            margin: 10px auto;
+            background-color: #f59e0b;
+            border-radius: 5px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .cards2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #64748b;
+        }
+
+        .about {
+            background-color: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 15px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background-color: #1e3a8a;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        /* Tombol menu mobile */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* Tampilan tablet dan handphone */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+                position: absolute;
+                top: 70px;
+                right: 8%;
+                width: 200px;
+                padding: 15px;
+                background-color: #1e3a8a;
+                border-radius: 8px;
+            }
+
+            .menu.show {
+                display: block;
+            }
+
+            .menu > li {
+                display: block;
+                margin: 15px 0;
+            }
+
+            #home {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 35px;
+            }
+
+            .hero-image {
+                font-size: 90px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
